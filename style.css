@@ -186,7 +186,7 @@ h2.section-title{color:var(--primary);font-weight:600;font-size:40px;letter-spac
   background-image: url('img/7.webp');
 }
 .works-grid .work-item:nth-child(2)::before {
-  background-image: url('img/8.webp');
+  background-image: url('img/Ash05.webp');
 }
 /* .works-grid .work-item:nth-child(3)::before { ... } */
 
@@ -704,4 +704,5 @@ html.is-animating .transition-slide {
 }
 html.is-rendering .transition-slide {
   animation: slideIn 0.7s;
+
 }
