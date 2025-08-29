@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="All Works — Devarsh R. Portfolio." />
+  <meta name="author" content="Devarsh-R" />
+  <title>All Works — DEVARSH R.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="header-inner">
+      <div class="brand"><a href="index.html">DR.</a></div>
+      
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+      </button>
+      
+      <nav id="primary-navigation" aria-label="Primary">
+        <a href="index.html#swup">HOME</a>
+        <a href="works.html">WORK</a>
+        <a href="#archives">ARCHIVES</a>
+        <a href="#about">ABOUT</a>
+      </nav>
+
+      <div class="year">2025</div>
+    </div>
+  </header>
+
+  <main id="swup" class="transition-slide">
+    <section class="wrap">
+      <h1 class="page-title reveal">ALL WORKS.</h1>
+
+      <div class="all-works-grid">
+        <article class="work-card reveal" data-project-id="0">
+          <div class="work-card-title">BRAHMA'25</div>
+        </article>
+        <article class="work-card reveal" data-project-id="1">
+          <div class="work-card-title">IEEE YESS'24</div>
+        </article>
+        <article class="work-card reveal" data-project-id="2">
+          <div class="work-card-title">IEEE KHM'24</div>
+        </article>
+        <article class="work-card reveal" data-project-id="3">
+          <div class="work-card-title">ASHWAMEDHA</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="socials">
+        <div>Behance</div>
+        <div>Instagram</div>
+        <div>Email</div>
+        <div>LinkedIn</div>
+      </div>
+      <div>©2025 Devarsh R. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <div id="project-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close project details">&times;</button>
+    
+      <div class="modal-body">
+      </div>
+
+    </div>
+  </div>
+
+
+<script>
+  // --- PROJECT DATA ---
+  const projects = [
+    {
+      title: "Brahma'25",
+      tagline: "Awaken The Creator Within.",
+      coverImage: "img/brahmaLand.webp",
+      description: "Brahma'25 is the 2025 edition of a national-level techno-cultural fest hosted by the Adi Shankara Institute of Engineering & Technology. The event serves as a dynamic platform for students to showcase their talents, learn, and connect through a celebration of technology and creativity.",
+      client: "Fest Committee, Adi Shankara Institute of Engineering & Technology",
+      timeline: "January – February 2025",
+      role: "Lead Visual & Digital Designer",
+      designApproach: "The visual strategy for Brahma'25 was built on a foundation of symbolic color-coding and a vibrant mix of artistic aesthetics. There was a specific color palette that was used to guide the audience: green was designated for cultural events, red for technical events, and blue for general events of the fest. <br><br>Drawing inspiration from the beautiful visuals of contemporary animation, a deliberate choice was made to combine 2D and 3D techniques in few designs, creating a visually rich and engaging experience for the audience. The main event poster, in particular, was conceptualized with the spirit of deep evolution and creative illumination, evoking the magnificence of 'celestial advancement' to set a powerful tone for the entire fest. This unified yet diverse approach ensured that while each event maintained its unique visual appeal, it remained clearly integrated within the overall Brahma'25 brand identity.",
+      galleryImages: ["img/6.webp", "img/7.webp", "img/brahma03.webp", "img/brahma07.webp", "img/brahma08.webp", "img/brahma09.webp", "img/brahma04.webp", "img/brahma05.webp", "img/brahma06.webp"]
+    },
+    {
+      title: "IEEE YESS 2024",
+      tagline: "IEEE Yearly Engineering Students Summit.",
+      coverImage: "img/yessLand.webp",
+      description: "IEEE YESS'24 is the largest engineering students summit organized by IEEE in the region, created as a collaborative initiative between IEEE LINK and the IEEE Kerala Section. The summit brings together over 5,000 participants from across India, providing a premier platform for students to connect with industry professionals and advance their professional development.",
+      client: "IEEE LINK, Students Activity Community of IEEE Kerala Section",
+      timeline: "June – August 2024",
+      role: "Digital Media Coordinator",
+      designApproach: "For IEEE YESS'24, my goal was to shape a visual identity that felt clean, professional, and full of energy — something that matched the scale of a national-level engineering summit. I built a consistent branding system that could live across all digital platforms, giving the audience a recognizable and cohesive experience.<br><br>The visuals were driven by a deep blue and off-white base, with vibrant orange accents that added spark and drew attention to key details. For typography, I paired bold, statement-style headlines with clean, legible fonts to keep information clear and structured. This design system was flexible enough to adapt across different event types — from futuristic tech expos to cultural activities — while still holding together a polished, unified identity for the summit.",
+      galleryImages: ["img/yess01.webp", "img/yess02.webp", "img/yess03.webp", "img/yess04.webp", "img/yess05.webp", "img/yess06.webp"]
+    },
+    {
+      title: "IEEE KHM 2024",
+      tagline: "IEEE Kochi Hub Meet 2024",
+      coverImage: "img/khmLand.webp",
+      description: "IEEE KHM 2024 is the flagship event for engineering students within the IEEE Kochi Hub, designed to bring together over 150 participants for a unique blend of technical innovation and community engagement. The meet provides a vibrant platform for networking, hands-on learning, and professional growth by fusing technology with entertainment.",
+      client: "IEEE LINK, Students Activity Community of IEEE Kerala Section",
+      timeline: "September – October 2024",
+      role: "Marketing & Brand Lead",
+      designApproach: "For KHM, I focused on building a brand identity rooted in strong visual consistency. I designed a unified template supported by a deep charcoal and vibrant gold palette — a combination that instantly gave the visuals a professional yet striking character.<br><br>What set this project apart was the creative use of AI-generated imagery. By tailoring each piece with its own AI-driven visual, I was able to create a campaign that felt dynamic and fresh. Technical workshops leaned into futuristic, sci-fi-inspired art, while social events were paired with warm, realistic scenes. Together, these visuals carried the spirit of technology, creativity, and community that defined the event.",
+      galleryImages: ["img/khm01.webp", "img/khm02.webp", "img/khm03.webp", "img/khm04.webp", "img/khm05.webp", "img/khm06.webp"]
+    },
+    {
+      title: "Ashwamedha",
+      tagline: "The Stallion Rises.",
+      coverImage: "img/AshLand.webp",
+      description: "Ashwamedha is the flagship national-level technical fest of Adi Shankara Institute of Engineering and Technology (ASIET), celebrated for its grandeur and excellence. More than just a technical fest, it's an experience that ignites a passion for technology and propels aspiring innovators to new heights.",
+      client: "Fest Committee, Adi Shankara Institute of Engineering & Technology",
+      timeline: "November 2023",
+      role: "Visual Designer",
+      designApproach: "For Ashwamedha, I wanted the visuals to capture the grit and boldness of the \"Wild West\". The design direction leaned into vintage Western aesthetics, building a cohesive theme that gave the entire event a distinct personality.<br><br>I worked with a warm, monochromatic palette of deep reds, browns, and aged parchment tones, layered with heavy textures and distressed typography. Burnt-edge borders and rough finishes added to the rugged, old-poster vibe. While the core visuals were AI-generated, I curated and refined each one to seamlessly fit the rustic theme — reimagining modern tech and gaming icons through an outlaw-inspired lens. The result was a bold, memorable identity that tied everything together under a unified, story-driven brand.",
+      galleryImages: ["img/Ash05.webp", "img/Ash02.webp", "img/Ash06.webp", "img/Ash04.webp", "img/Ash01.webp", "img/Ash03.webp"]
+    }
+  ];
+
+  function initWorksPage() {
+    const workCards = document.querySelectorAll('.work-card');
+    const modalOverlay = document.getElementById('project-modal');
+    if (!modalOverlay) return; // Exit if modal isn't on the page
+
+    const modalBody = modalOverlay.querySelector('.modal-body');
+    const closeModalBtn = modalOverlay.querySelector('.modal-close-btn');
+
+    const openModal = (projectId) => {
+      const projectData = projects[projectId];
+      if (!projectData) return;
+      const galleryHTML = projectData.galleryImages.map(img => `<img src="${img}" alt="${projectData.title} gallery image">`).join('');
+      modalBody.innerHTML = `
+        <img src="${projectData.coverImage}" alt="${projectData.title} cover" class="modal-cover-image">
+        <h1>${projectData.title}</h1>
+        <p class="tagline">${projectData.tagline}</p>
+        <p>${projectData.description}</p>
+        <div class="modal-meta-grid">
+          <div><h4>Client/Organization</h4><p>${projectData.client}</p></div>
+          <div><h4>Timeline</h4><p>${projectData.timeline}</p></div>
+          <div><h4>Role</h4><p>${projectData.role}</p></div>
+        </div>
+        <h3>Design Approach</h3>
+        <p>${projectData.designApproach}</p>
+        <h3>Gallery</h3>
+        <div class="modal-gallery">${galleryHTML}</div>
+      `;
+      modalOverlay.style.display = 'flex';
+      setTimeout(() => modalOverlay.classList.add('visible'), 10);
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeModal = () => {
+      modalOverlay.classList.remove('visible');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        modalOverlay.style.display = 'none';
+        modalBody.innerHTML = '';
+      }, 300);
+    };
+    
+    workCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const projectId = card.getAttribute('data-project-id');
+        openModal(projectId);
+      });
+    });
+
+    closeModalBtn.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalOverlay.classList.contains('visible')) closeModal();
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectToOpen = urlParams.get('project');
+    if (projectToOpen !== null) {
+      openModal(projectToOpen);
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+  }
+  initWorksPage();
+  document.addEventListener('swup:page:view', initWorksPage);
+
+  const primaryNav = document.querySelector('#primary-navigation');
+  const navToggle = document.querySelector('.mobile-nav-toggle');
+
+  navToggle.addEventListener('click', () => {
+    const isVisible = primaryNav.getAttribute('data-visible') === 'true';
+
+    if (isVisible) {
+      primaryNav.setAttribute('data-visible', 'false');
+      navToggle.setAttribute('aria-expanded', 'false');
+    } else {
+      primaryNav.setAttribute('data-visible', 'true');
+      navToggle.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  (function(){
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in-view');
+        }
+      });
+    },{threshold:0.12});
+
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  })();
+
+  const swup = new Swup();
+</script>
+
+<script src="js/swup.min.js"></script>
+</body>
+</html>
