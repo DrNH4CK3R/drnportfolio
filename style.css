@@ -182,13 +182,12 @@ h2.section-title{color:var(--primary);font-weight:600;font-size:40px;letter-spac
   z-index: 2;
 }
 
-.works-grid .work-item:nth-child(1)::before {
+.works-grid a:nth-child(1) .work-item::before {
   background-image: url('img/7.webp');
 }
-.works-grid .work-item:nth-child(2)::before {
+.works-grid a:nth-child(2) .work-item::before {
   background-image: url('img/Ash05.webp');
 }
-/* .works-grid .work-item:nth-child(3)::before { ... } */
 
 .work-item::after{
   content:"";
@@ -706,3 +705,4 @@ html.is-rendering .transition-slide {
   animation: slideIn 0.7s;
 
 }
+
