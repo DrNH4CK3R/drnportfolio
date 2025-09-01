@@ -299,6 +299,8 @@ h2.section-title{color:var(--primary);font-weight:600;font-size:40px;letter-spac
   color: var(--primary);
   max-width: 800px;
   margin: 0;
+
+  opacity: 0.5;
 }
 
 .archives-sticky-text cite {
@@ -307,6 +309,8 @@ h2.section-title{color:var(--primary);font-weight:600;font-size:40px;letter-spac
   color: var(--secondary);
   margin-top: 24px;
   font-style: normal;
+
+  opacity: 0.5;
 }
 
 .archives-grid {
@@ -705,4 +709,5 @@ html.is-rendering .transition-slide {
   animation: slideIn 0.7s;
 
 }
+
 
